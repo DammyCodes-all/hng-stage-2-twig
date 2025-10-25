@@ -6,9 +6,7 @@ composer.lock
 # Twig cache
 /cache/
 
-# Data files (temporary - can commit later to show data functionality)
-/data/tickets.json
-/public/data/tickets.json
+
 
 # IDE and OS files
 .vscode/
