@@ -1,0 +1,55 @@
+# Vendor dependencies (always ignore)
+/vendor/
+composer.phar
+composer.lock
+
+# Twig cache
+/cache/
+
+# Data files (temporary - can commit later to show data functionality)
+/data/tickets.json
+/public/data/tickets.json
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.bak
+
+# Logs
+*.log
+
+# Phase-based commit strategy (uncomment sections as you commit each phase)
+
+# PHASE 1: Initial setup and landing page
+# (Ready to commit first - keep these uncommented to commit)
+
+# PHASE 2: Authentication (uncomment when ready to commit auth)
+# /public/auth.php
+# /public/assets/js/pages/auth.js
+# /public/assets/js/utils/auth.js
+# /src/templates/pages/auth.twig
+
+# PHASE 3: Dashboard (uncomment when ready to commit dashboard)
+# /public/assets/js/pages/dashboard.js
+# /src/templates/pages/dashboard.twig
+
+# PHASE 4: Tickets CRUD (uncomment when ready to commit tickets)
+# /public/api/tickets.php
+# /public/assets/js/pages/tickets.js
+# /public/assets/js/utils/ticket-dialog.js
+# /src/templates/pages/tickets.twig
+# /src/templates/partials/ticket-card.twig
+# /src/templates/partials/ticket-dialog.twig
+# /src/templates/partials/delete-dialog.twig
+
+# PHASE 5: Final polish (uncomment when ready to commit final touches)
+# /public/assets/index.css
+# /public/assets/js/utils/toast.js
