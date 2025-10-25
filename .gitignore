@@ -1,9 +1,12 @@
-# Vendor dependencies (always ignore)
+# Vendor dependencies (composer install on server)
 /vendor/
-composer.phar
-composer.lock
 
-# Twig cache
+# Environment-specific files
+composer.lock
+.env
+.env.local
+
+# Twig cache (regenerated on server)
 /cache/
 
 
@@ -23,31 +26,8 @@ Thumbs.db
 
 # Logs
 *.log
+/logs/
 
-# Phase-based commit strategy (uncomment sections as you commit each phase)
-
-# PHASE 1: Initial setup and landing page
-# (Ready to commit first - keep these uncommented to commit)
-
-# PHASE 2: Authentication (uncomment when ready to commit auth)
-# /public/auth.php
-# /public/assets/js/pages/auth.js
-# /public/assets/js/utils/auth.js
-# /src/templates/pages/auth.twig
-
-# PHASE 3: Dashboard (uncomment when ready to commit dashboard)
-# /public/assets/js/pages/dashboard.js
-# /src/templates/pages/dashboard.twig
-
-# PHASE 4: Tickets CRUD (uncomment when ready to commit tickets)
-# /public/api/tickets.php
-# /public/assets/js/pages/tickets.js
-# /public/assets/js/utils/ticket-dialog.js
-# /src/templates/pages/tickets.twig
-# /src/templates/partials/ticket-card.twig
-# /src/templates/partials/ticket-dialog.twig
-# /src/templates/partials/delete-dialog.twig
-
-# PHASE 5: Final polish (uncomment when ready to commit final touches)
-# /public/assets/index.css
-# /public/assets/js/utils/toast.js
+# Development files
+composer-setup.php
+README.md
